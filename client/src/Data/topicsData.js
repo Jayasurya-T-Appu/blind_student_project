@@ -1,8 +1,10 @@
 const TopicsData = {
   Stories: {
+    
     contents: {
-      "Lying breaks trust": {
-        title: "Lying breaks trust",
+      "The lion and the mouse": {
+        title: "The lion and the mouse",
+        audio: 'lion_and_mouse.mp3', 
         content: `There once was a boy who grew bored while watching over the village sheep. 
         He wanted to make things more exciting. 
         So, he yelled out that he saw a wolf chasing the sheep. 
@@ -35,13 +37,19 @@ const TopicsData = {
 
     },
   },
-  // "Alphabets": {},
-  // "Rhymes": {},
-  // "Poems": {},
-  // "Short Stories": {},
-  // "Basic learning things": {},
-  // "Basic mathematics": {},
-  // "Basic Algebra": {},
+  "Alphabets": {},
+  "Rhymes": {},
+  "Poems": {},
+  "Short Stories": {},
+  "Basic learning things": {},
+  "Basic mathematics": {},
+  "Basic Algebra": {},
+  "Algebra": {},
+  "Sets": {},
+  "Routes": {},
+  "OIC": {},
+  "LIC": {},
+ 
 };
 
 export default TopicsData;

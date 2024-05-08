@@ -18,7 +18,7 @@ const Home = () => {
       <p className='text-center text-3xl font-medium underline underline-offset-3'>Select Language</p>
       <div className=' flex flex-col justify-center items-center md:flex-row'>
         <ButtonComponent text={'ENGLISH'} routeTo={`/topics/english`} disabled={buttonDisabled} />
-        <ButtonComponent text={'MALAYALAM'} routeTo={`/topics/malayalam`} disabled={buttonDisabled} />
+        {/* <ButtonComponent text={'MALAYALAM'} routeTo={`/topics/malayalam`} disabled={buttonDisabled} /> */}
 
       </div>
 

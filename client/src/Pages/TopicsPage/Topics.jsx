@@ -20,16 +20,18 @@ const Topics = () => {
       // eslint-disable-next-line react-hooks/exhaustive-deps   
     },[])
   return (
-    <div className='w-screen h-screen  bg-slate-300'>
+    <div className='w-screen h-100  bg-slate-300'>
       <div className='w-100 flex h-24 justify-end items-center'>
       <Link className='mr-24 bg-blue-600 px-3 py-1 text-white font-medium rounded rounded-md' to={'/home'}>BACK</Link>
       </div>
       <p className='text-center text-3xl font-medium underline underline-offset-3'>Select Topic</p>
-      <div className='w-screen grid grid-rows-4 grid-flow-col justify-center items-center'>
+      <div className='w-screen grid md:grid-cols-3 grid-cols-1 justify-center items-center'>
       {
         topicList?.map((key)=>{
           return (
-            <ButtonComponent disabled={buttonDisabled} key={key} text={key} routeTo={`/content/${key}`} />
+            <div key={key} className='w-100 h-100 flex justify-center items-center'>
+                 <ButtonComponent disabled={buttonDisabled} key={key} text={key} routeTo={`/content/${key}`} />
+            </div>
           )
         })
       }
